@@ -1,0 +1,117 @@
+{% extends 'school/adminbase.html' %}
+
+
+
+{% block content %}
+
+<head>
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+</head>
+
+
+
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">FEE OF STUDENTS</h6>
+
+      </div>
+
+      <table class="table table-hover" id="dev-table">
+        <thead>
+
+          <tr>
+            <th>Course Name</th>
+
+            <th>View Dues</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>MCA</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'MCA'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>MSC(Comuter Science)</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'MSC'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.A(English)</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.A(English)'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.A(Hindi)</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.A(Hindi)'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.A(History)</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.A(History)'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.A(Psychology)</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.A(Psychology)'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.A(Sociology)</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.A(Sociology)'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.Com</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.Com'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>MBA</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'MBA'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td>M.Lib</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'M.Lib'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+      </table>
+    </div>
+
+
+  </div>
+</div>
+
+<!--
+      written By : sumit kumar
+      facebook : fb.com/sumit.luv
+      -->
+
+
+
+{% endblock content %}
